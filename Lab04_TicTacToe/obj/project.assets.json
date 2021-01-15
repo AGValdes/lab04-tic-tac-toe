@@ -689,19 +689,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\scott\\.nuget\\packages\\": {}
+    "C:\\Users\\valde\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\scott\\codefellows\\lab04-tic-tac-toe\\Lab04_TicTacToe\\Lab04_TicTacToe.csproj",
+      "projectUniqueName": "C:\\Users\\valde\\source\\repos\\lab04-tic-tac-toe\\Lab04_TicTacToe\\Lab04_TicTacToe.csproj",
       "projectName": "Lab04_TicTacToe",
-      "projectPath": "C:\\Users\\scott\\codefellows\\lab04-tic-tac-toe\\Lab04_TicTacToe\\Lab04_TicTacToe.csproj",
-      "packagesPath": "C:\\Users\\scott\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\scott\\codefellows\\lab04-tic-tac-toe\\Lab04_TicTacToe\\obj\\",
+      "projectPath": "C:\\Users\\valde\\source\\repos\\lab04-tic-tac-toe\\Lab04_TicTacToe\\Lab04_TicTacToe.csproj",
+      "packagesPath": "C:\\Users\\valde\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\valde\\source\\repos\\lab04-tic-tac-toe\\Lab04_TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\scott\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\valde\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
