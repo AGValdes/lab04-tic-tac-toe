@@ -3,7 +3,7 @@ using Lab04_TicTacToe.Classes;
 
 namespace Lab04_TicTacToe
 {
-    class Program
+    public class Program
     {
         static Classes.Player[] playerContainer = new Classes.Player[2];
 

@@ -10,7 +10,7 @@ namespace Lab_04_tests
         [Fact]
         public void TestForAWinner()
         {
-           /* Player player1 = new Player();
+            Player player1 = new Player();
             player1.Name = "jane";
             player1.Marker = "O";
 
@@ -20,12 +20,19 @@ namespace Lab_04_tests
 
             Game newGame = new Game(player1, player2);
 
-            Board testBoard = new Board();
-            testBoard.GameBoard = 
-             
+            Board testBoard = new Board()
+            {
+                GameBoard =
+            new string[,]
+            {
+                {"X", "2", "1"},
+                {"X", "5", "6"},
+                {"X", "8", "9"},
+            }
 
+            };
 
-            Assert.True(newGame.CheckForWinner());*/
+            Assert.True(newGame.CheckForWinner(testBoard));
         }
 
         [Fact]
@@ -45,5 +52,12 @@ namespace Lab_04_tests
 
             Assert.True(player2.IsTurn);
         }
+
     }
+
+        
+
+
 }
+
+
