@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Lab04_TicTacToe.Classes
 {
 	class Game
@@ -28,15 +29,38 @@ namespace Lab04_TicTacToe.Classes
 		/// Activate the Play of the game
 		/// </summary>
 		/// <returns>Winner</returns>
-		public Player Play(Player playerOne, Player playerTwo)
+		public Player Play(Player PlayerOne, Player PlayerTwo)
 		{
-		
-			
-			//for (int i = 0; i < 9; i++)
-			//{
-				playerOne.TakeTurn(Board);
+			int counter = 0;
 
-            //}
+            while (counter < 9)
+            {
+				Console.Clear();
+				Board.DisplayBoard();
+				if (PlayerOne.IsTurn)
+                {
+					PlayerOne.TakeTurn(Board);
+                }
+                else
+                {
+					PlayerTwo.TakeTurn(Board);
+                }
+				counter++;
+
+				if (CheckForWinner(Board))
+                {
+					counter = 9;
+                }
+				Console.WriteLine(NextPlayer().Name);
+				SwitchPlayer();
+
+            }
+			return Winner;
+			
+		
+				
+
+            
 			//TODO: Complete this method and utilize the rest of the class structure to play the game.
 
 			/*
@@ -53,7 +77,7 @@ namespace Lab04_TicTacToe.Classes
 
             Use any and all pre-existing methods in this program to help construct the method logic. 
              */
-			return new Player();  // fixing compiler bug
+			 
 		}
 
 
@@ -91,7 +115,14 @@ namespace Lab04_TicTacToe.Classes
 
 				// TODO:  Determine a winner has been reached. 
 				// return true if a winner has been reached. 
-			
+
+				if (a == b && b == c)
+				{
+					Console.WriteLine("You Win!");
+					return true;
+				}
+
+
 			}
 
 			return false;

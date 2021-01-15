@@ -17,6 +17,8 @@ namespace Lab04_TicTacToe.Classes
 		/// </summary>
 		public bool IsTurn { get; set; }
 
+		public bool IsWinner { get; set; }
+
 
 		public Position GetPosition(Board board)
 		{
