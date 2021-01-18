@@ -61,9 +61,9 @@ namespace Lab04_TicTacToe.Classes
 
 			Position position = GetPosition(board);
 
-			if (Int32.TryParse(Board.GameBoard[position.Row, position.Column], out int _))
+			if (Int32.TryParse(board.GameBoard[position.Row, position.Column], out int _))
 			{
-				Board.GameBoard[position.Row, position.Column] = Marker;
+				board.GameBoard[position.Row, position.Column] = Marker;
 			}
 			else
 			{

@@ -10,7 +10,7 @@ namespace Lab04_TicTacToe.Classes
 		/// <summary>
 		/// Tic Tac Toe Gameboard states
 		/// </summary>
-		public static string[,] GameBoard = new string[,]
+		public string[,] GameBoard = new string[,]
 		{
 			{"1", "2", "3"},
 			{"4", "5", "6"},
@@ -21,12 +21,13 @@ namespace Lab04_TicTacToe.Classes
 		public static void DisplayBoard()
 		{
 
-            //TODO: Output the board to the console
+			//TODO: Output the board to the console
+			Board GameBoard = new Board();
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-					string row = "|" + GameBoard[i, j] + "|";
+					string row = "|" + GameBoard.GameBoard[i, j] + "|";
 				Console.Write(row);
 
                 }
