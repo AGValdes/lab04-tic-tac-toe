@@ -29,7 +29,7 @@ namespace Lab04_TicTacToe.Classes
 		/// Activate the Play of the game
 		/// </summary>
 		/// <returns>Winner</returns>
-		public Player Play(Player PlayerOne, Player PlayerTwo)
+		public Player Play(Player PlayerOne, Player PlayerTwo, Board board)
 		{
 			int counter = 0;
 
@@ -39,15 +39,15 @@ namespace Lab04_TicTacToe.Classes
 				Board.DisplayBoard();
 				if (PlayerOne.IsTurn)
                 {
-					PlayerOne.TakeTurn(Board);
+					PlayerOne.TakeTurn(board);
                 }
                 else
                 {
-					PlayerTwo.TakeTurn(Board);
+					PlayerTwo.TakeTurn(board);
                 }
 				counter++;
 
-				if (CheckForWinner(Board))
+				if (CheckForWinner(board))
                 {
 					counter = 9;
                 }
@@ -109,9 +109,9 @@ namespace Lab04_TicTacToe.Classes
 				Position p2 = Player.PositionForNumber(winners[i][1]);
 				Position p3 = Player.PositionForNumber(winners[i][2]);
 
-				string a = Board.GameBoard[p1.Row, p1.Column];
-				string b = Board.GameBoard[p2.Row, p2.Column];
-				string c = Board.GameBoard[p3.Row, p3.Column];
+				string a = board.GameBoard[p1.Row, p1.Column];
+				string b = board.GameBoard[p2.Row, p2.Column];
+				string c = board.GameBoard[p3.Row, p3.Column];
 
 				// TODO:  Determine a winner has been reached. 
 				// return true if a winner has been reached. 

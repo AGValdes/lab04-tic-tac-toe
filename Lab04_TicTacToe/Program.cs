@@ -21,7 +21,8 @@ namespace Lab04_TicTacToe
             // You are requesting a Winner to be returned, Determine who the winner is output the celebratory message to the correct player. If it's a draw, tell them that there is no winner. 
          
             Game newGame = MakeGame(playerContainer[0], playerContainer[1]);
-            newGame.Play(playerContainer[0], playerContainer[1]);
+            Board board = new Board();
+            newGame.Play(playerContainer[0], playerContainer[1], board);
            
             
 
